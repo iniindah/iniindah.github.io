@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<body background="foto jpg.jpg">
+     
+    <title>P05-JQuery Sliding</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        #panel, #flip {
+		padding: 5px;
+		text-align: center;
+		font-size: 18px;
+        font-family: Cambira ;
+		background-color: lightsteelblue;
+		border: solid 1px rgb(7, 6, 6);
+		border-radius: 3px;
+		cursor: pointer;
+
+	}
+	#panel {
+		padding: 50px;
+		display: none;
+		position: absolute;
+		color: black;
+	}
+</style>
+	</script>
+</head>
+
+<body>
+    <div id="flip"> Jquery-Efect Slide </div>
+    <div id="panel"> Metode jQuery slideToggle() menampilkan atau menyembunyikan elemen yang dipilih dengan menganimasikan height mereka sedemikian rupa sehingga jika elemen tersebut awalnya ditampilkan, itu akan bergeser ke atas; jika disembunyikan, itu akan menjadi slide ke bawah yaitu beralih antara metode slideUp() dan slideDown() method slideUp() digunakan untuk menyembunyikan element (naik ke atas), sedangkan method slideDown() digunakan untuk memunculkan element (turun ke bawah), tentunya dengan efek sliding.
+
+		Untuk mengontrol kecepatan efek, kita bisa menggunakan keyword “slow”, “fast”, atau angka sebagai argumen method ini (dalam satuan milisecond).. </div>
+</body>
+
+</html>
